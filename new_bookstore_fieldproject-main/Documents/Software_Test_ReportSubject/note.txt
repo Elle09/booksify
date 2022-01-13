@@ -1,0 +1,7 @@
+demo: - giới thiệu này là web tlcn
+	- bug: 
+
+hướng phát triển: nhóm em không có ý định phát triển đề tài lên khóa luận
+
+khó khăn: covid 19 ko gặp nhau trực tiếp được
+

@@ -1,0 +1,5 @@
+Xem commit xxxxxxxxx
+
+sau đó merge tất cả vào nhánh main rồi thực thi nhánh main từ đó về sau
+https://devcenter.heroku.com/articles/heroku-cli#getting-started
+
