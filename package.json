@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "MERN STACK BOOKSTORE WEBSITE REACT, REDUX, EXPRESS, NODE, MONGODB",
   "main": "backend/server.js",
+  
+  "engines": {
+    "npm": "6.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server.js",
