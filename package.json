@@ -4,7 +4,7 @@
   "description": "MERN STACK BOOKSTORE WEBSITE REACT, REDUX, EXPRESS, NODE, MONGODB",
   "main": "backend/server.js",
   "engines": {
-    "npm": "14.x"
+    "npm": "8.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,8 +12,8 @@
     "dev": "nodemon backend/server.js",
     "build": " npm install --prefix frontend && npm run build --prefix frontend",
     "client2": "npm start --prefix frontend",
-    "mern": "concurrently \"yarn dev\"  \"yarn client2\" "
-    
+    "mern": "concurrently \"yarn dev\"  \"yarn client2\" ",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.3.0",
     "mongoose": "^6.1.6",
+    "node-engine": "^0.0.5",
     "nodemailer": "^6.7.0",
     "nodemon": "^2.0.13",
     "path": "^0.12.7",
