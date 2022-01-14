@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "MERN STACK BOOKSTORE WEBSITE REACT, REDUX, EXPRESS, NODE, MONGODB",
   "main": "backend/server.js",
-  
   "engines": {
     "npm": "6.x"
   },
@@ -11,8 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js",
-    "build":" npm install --prefix frontend && npm run build --prefix frontend",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+    "build": " npm install --prefix frontend && npm run build --prefix frontend",
+    "client2": "npm start --prefix frontend",
+    "mern": "concurrently \"yarn dev\"  \"yarn client2\" "
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.1",
     "cloudinary": "^1.27.1",
+    "concurrently": "^7.0.0",
     "cookie-parser": "^1.4.5",
     "crypto": "^1.0.1",
     "dotenv": "^10.0.0",
