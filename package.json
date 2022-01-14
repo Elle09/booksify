@@ -12,7 +12,8 @@
     "dev": "nodemon backend/server.js",
     "build": " npm install --prefix frontend && npm run build --prefix frontend",
     "client2": "npm start --prefix frontend",
-    "mern": "concurrently \"yarn dev\"  \"yarn client2\" "
+    "mern": "concurrently \"yarn dev\"  \"yarn client2\" ",
+    "heroku config":"set NPM_CONFIG_PRODUCTION=false"
   },
   "repository": {
     "type": "git",
